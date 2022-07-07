@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import LogoWhite from "../public/assets/LogoWhite.svg";
+import Image from "next/image";
 
 export default function Header() {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const [button, setButton] = useState(true);
   const [navbar, setNavbar] = useState(false);
 
@@ -10,7 +12,7 @@ export default function Header() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    console.log("metodo");
+    // console.log("metodo");
     if (window.innerWidth <= 960) {
       setButton(false);
     } else {
@@ -26,10 +28,10 @@ export default function Header() {
     window.addEventListener("resize", showButton);
   }, []);
 
-  console.log("a");
+  // console.log("a");
 
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 80) {
       setNavbar(true);
     } else {
@@ -53,10 +55,11 @@ export default function Header() {
     >
       <div className="container flex  flex-wrap justify-between items-center mx-auto py-2">
         <a href="https://inittsoft.com/" className="flex items-center">
-          <img
-            src="assets/LogoWhite.svg"
+          <Image
+            src={LogoWhite}
             className="mr-3 h-6 sm:h-9"
             alt="Flowbite Logo"
+            layout="responsive"
           />
 
           <span className="self-center text-xl font-semibold whitespace-nowrap">
@@ -103,12 +106,12 @@ export default function Header() {
         {/*justify-between items-center w-full md:flex md:w-auto md:order-1 xl:order-1 hidden*/}
         <div
           className={
-            "justify-between items-center w-full md:flex md:w-auto md:order-1 xl:order-1 " +
+            "justify-between items-center w-full md:flex md:w-auto md:order-1 xl:order-1 bg-white md:bg-transparent " +
             (click ? "hidden" : "")
           }
           id="menu"
         >
-          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
               <a
                 href="#"
@@ -121,7 +124,7 @@ export default function Header() {
 
             <li>
               <a
-                href="#"
+                href="#servicios"
                 className="block py-2 pr-4 pl-3 text-gray-500 border-b hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0"
               >
                 Servicios
@@ -130,7 +133,7 @@ export default function Header() {
 
             <li>
               <a
-                href="#"
+                href="#proyectos"
                 className="block py-2 pr-4 pl-3 text-gray-500 border-b hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-sky-500 md:p-0"
               >
                 Proyectos
