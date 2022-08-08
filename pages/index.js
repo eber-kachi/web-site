@@ -3,7 +3,29 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import Banner from "../public/assets/Banner.jpg";
+import Google from "../public/assets/google.svg";
+import Aws from "../public/assets/aws.svg";
+import Firebase from "../public/assets/firebase.svg";
+import DOcean from "../public/assets/digital-ocean.svg";
+import Next from "../public/assets/nextjs.svg";
+import Ghost from "../public/assets/ghost.svg";
+import Blog from "../public/assets/blog.png";
+import Development from "../public/assets/development.png";
+import CamaraCctv from "../public/assets/camara-de-cctv.png";
+import Server from "../public/assets/server.jpeg";
+import Camaradeseg from "../public/assets/Camaradeseg.jpeg";
+import Software from "../public/assets/software.jpeg";
+import Socialmedia from "../public/assets/social_media.jpeg";
+import Conectica from "../public/assets/Conectica.png";
+import Destination from "../public/assets/destination.png";
+import Blogging from "../public/assets/blogging.png";
+import Miotb from "../public/assets/Miotb.png";
+
 export default function Home() {
+  const width = 96;
+  const height = 96;
+
   return (
     <div>
       <Head>
@@ -19,7 +41,10 @@ export default function Home() {
       <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 mx-10">
         <div className="flex flex-col justify-center md:pl-20 mt-10">
           <div className="mt-10">
-            <span className="bg-gray-200 text-gray-500 text-xs font-semibold  rounded-full py-3 px-5">
+            <span
+              className="bg-gray-200 text-gray-500 md:text-xs font-semibold  rounded-full py-3 px-5"
+              style={{ fontSize: "10px" }}
+            >
               Teconologías modernas para tu orgnización
             </span>
           </div>
@@ -59,7 +84,8 @@ export default function Home() {
         </div>
 
         <div>
-          <img src="assets/Banner.jpg" />
+          <Image src={Banner} alt="banner" />
+          {/* <img src="assets/Banner.jpg" /> */}
         </div>
       </div>
 
@@ -74,46 +100,93 @@ export default function Home() {
           // style={{ display: "none" }}
         >
           <div className="mx-5">
-            <img
+            <Image
+              src={Google}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+            {/* <img
               src="assets/google.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
           <div className="mx-5">
-            <img
+            <Image
+              src={Aws}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+
+            {/* <img
               src="assets/aws.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
           <div className="mx-5">
-            <img
+            <Image
+              src={Firebase}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+
+            {/* <img
               src="assets/firebase.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
           <div className="mx-5">
-            <img
+            <Image
+              src={DOcean}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+
+            {/* <img
               src="assets/digital-ocean.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
           <div className="mx-5">
-            <img
+            <Image
+              src={Next}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+
+            {/* <img
               src="assets/nextjs.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
           <div className="mx-5">
-            <img
+            <Image
+              src={Ghost}
+              alt="Flowbite Logo"
+              className="w-24 h-24"
+              width={width}
+              height={height}
+            />
+
+            {/* <img
               src="assets/ghost.svg"
               className="w-24 h-24"
               alt="Flowbite Logo"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -121,11 +194,19 @@ export default function Home() {
       {/*Principal */}
       <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-1 gap-10 m-10 ">
         <div className="flex flex-col  items-center text-center">
-          <img
+          <Image
+            src={Blog}
+            alt="Flowbite Logo"
+            className="w-24 h-24"
+            width={width}
+            height={height}
+          />
+
+          {/* <img
             src="assets/blog.png"
             className="w-24 h-24"
             alt="Flowbite Logo"
-          />
+          /> */}
 
           <h2 className="text-base font-bold m-2">Gestor de contenido</h2>
 
@@ -156,11 +237,19 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col  items-center text-center">
-          <img
+          <Image
+            src={Development}
+            alt="Flowbite Logo"
+            className="w-24 h-24"
+            width={width}
+            height={height}
+          />
+
+          {/* <img
             src="assets/development.png"
             className="w-24 h-24"
             alt="Flowbite Logo"
-          />
+          /> */}
 
           <h2 className="text-base font-bold m-2">Desarrollo de Software</h2>
 
@@ -191,11 +280,19 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col  items-center text-center">
-          <img
+          <Image
+            src={CamaraCctv}
+            alt="Flowbite Logo"
+            className="w-24 h-24"
+            width={width}
+            height={height}
+          />
+
+          {/* <img
             src="assets/camara-de-cctv.png"
             className="w-24 h-24"
             alt="Flowbite Logo"
-          />
+          /> */}
 
           <h2 className="text-base font-bold m-2">
             Instalación de cámaras de seguridad
@@ -247,7 +344,8 @@ export default function Home() {
         {/*cloud Hosting */}
         <div className="bg-white grid lg:grid-cols-2 md:grid-cols-1 place-content-center">
           <div>
-            <img src="assets/server.jpeg" />
+            <Image src={Server} alt="Flowbite Logo" />
+            {/* <img src="assets/server.jpeg" /> */}
           </div>
           <div className="flex flex-col justify-center max-w-md  md:pl-20 p-10 ">
             <h3 className="text-3xl font-bold ">Cloud Hosting</h3>
@@ -287,13 +385,15 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <img src="assets/social_media.jpeg" />
+            <Image src={Socialmedia} alt="Flowbite Logo" />
+            {/* <img src="assets/social_media.jpeg" /> */}
           </div>
         </div>
         {/*Desarrollo de software */}
         <div className="bg-white grid lg:grid-cols-2 md:grid-cols-1 place-content-center">
           <div>
-            <img src="assets/software.jpeg" />
+            <Image src={Software} alt="Flowbite Logo" />
+            {/* <img src="assets/software.jpeg" /> */}
           </div>
           <div className="flex flex-col justify-center max-w-md md:pl-20  p-10">
             <h1 className="text-3xl font-bold">
@@ -336,7 +436,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <img src="assets/camaradeseg.jpeg" />
+            <Image src={Camaradeseg} alt="Flowbite Logo" />
+            {/* <img src="assets/camaradeseg.jpeg" /> */}
           </div>
         </div>
       </div>
@@ -358,11 +459,18 @@ export default function Home() {
           <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none px-5">
             <div className="max-w-sm bg-white rounded-2xl shadow-md  ">
               <div className="flex flex-col items-center text-center p-5">
-                <img
+                <Image
+                  src={Conectica}
+                  alt="Flowbite Logo"
+                  width={width}
+                  height={height}
+                />
+                {/* <img
                   className="mb-3 w-24 h-24 rounded-full shadow-lg"
                   src="assets/Conectica.png"
                   alt="Bonnie image"
-                />
+                /> */}
+
                 <h5 className="mb-1 text-xl font-medium text-gray-900 ">
                   Conectica
                 </h5>
@@ -382,11 +490,18 @@ export default function Home() {
           <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none px-5">
             <div className="max-w-sm bg-white rounded-2xl shadow-md gap-10 ">
               <div className="flex flex-col items-center text-center p-5">
-                <img
+                <Image
+                  src={Destination}
+                  alt="Flowbite Logo"
+                  className="mb-3 w-24 h-24 rounded-full shadow-lg"
+                  width={width}
+                  height={height}
+                />
+                {/* <img
                   className="mb-3 w-24 h-24 rounded-full shadow-lg"
                   src="assets/destination.png"
                   alt="Bonnie image"
-                />
+                /> */}
                 <h5 className="mb-1 text-xl font-medium text-gray-900 ">
                   Turistics
                 </h5>
@@ -407,11 +522,18 @@ export default function Home() {
           <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none px-5">
             <div className="max-w-sm bg-white rounded-2xl shadow-md gap-10 ">
               <div className="flex flex-col items-center text-center p-5">
-                <img
+                <Image
+                  src={Blogging}
+                  alt="Flowbite Logo"
+                  className="mb-3 w-24 h-24 rounded-full shadow-lg"
+                  width={width}
+                  height={height}
+                />
+                {/* <img
                   className="mb-3 w-24 h-24 rounded-full shadow-lg"
                   src="assets/blogging.png"
                   alt="Bonnie image"
-                />
+                /> */}
                 <h5 className="mb-1 text-xl font-medium text-gray-900 ">
                   Blogging
                 </h5>
@@ -430,11 +552,18 @@ export default function Home() {
           <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none px-5">
             <div className="max-w-sm bg-white rounded-2xl shadow-md gap-10 ">
               <div className="flex flex-col items-center text-center p-5">
-                <img
+                <Image
+                  src={Miotb}
+                  alt="Flowbite Logo"
+                  className="mb-3 w-24 h-24 rounded-full shadow-lg"
+                  width={width}
+                  height={height}
+                />
+                {/* <img
                   className="mb-3 w-24 h-24 rounded-full shadow-lg"
                   src="assets/Miotb.png"
                   alt="Bonnie image"
-                />
+                /> */}
                 <h5 className="mb-1 text-xl font-medium text-gray-900 ">
                   Sistema de acreditaciones y asistencias
                 </h5>
