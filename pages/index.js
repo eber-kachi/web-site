@@ -14,7 +14,7 @@ import Blog from "../public/assets/blog.png";
 import Development from "../public/assets/development.png";
 import CamaraCctv from "../public/assets/camara-de-cctv.png";
 import Server from "../public/assets/server.jpeg";
-import Camaradeseg from "../public/assets/Camaradeseg.jpeg";
+import Camaradeseg from "../public/assets/camaradeseg.jpeg";
 import Software from "../public/assets/software.jpeg";
 import Socialmedia from "../public/assets/social_media.jpeg";
 import Conectica from "../public/assets/Conectica.png";
