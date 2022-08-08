@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div style={{ zIndex: "-5" }}>
           <Image src={Banner} alt="banner" />
           {/* <img src="assets/Banner.jpg" /> */}
         </div>
