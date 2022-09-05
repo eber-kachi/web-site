@@ -54,17 +54,17 @@ function _interopRequireWildcard(obj) {
 });
 const defaultCommand = "start";
 const commands = {
-  build: () => Promise.resolve(require("../cli/next-build").nextBuild),
+  build: () => Promise.resolve(require("./node_modules/next/dist/cli/next-build").nextBuild),
   start: () =>
     Promise.resolve(
       require("./node_modules/next/dist/cli/next-start").nextStart
     ),
-  export: () => Promise.resolve(require("../cli/next-export").nextExport),
-  dev: () => Promise.resolve(require("../cli/next-dev").nextDev),
-  lint: () => Promise.resolve(require("../cli/next-lint").nextLint),
+  export: () => Promise.resolve(require("./node_modules/next/dist/cli/next-export").nextExport),
+  dev: () => Promise.resolve(require("./node_modules/next/dist/cli/next-dev").nextDev),
+  lint: () => Promise.resolve(require("./node_modules/next/dist/cli/next-lint").nextLint),
   telemetry: () =>
-    Promise.resolve(require("../cli/next-telemetry").nextTelemetry),
-  info: () => Promise.resolve(require("../cli/next-info").nextInfo),
+    Promise.resolve(require("./node_modules/next/dist/cli/next-telemetry").nextTelemetry),
+  info: () => Promise.resolve(require("./node_modules/next/dist/cli/next-info").nextInfo),
 };
 exports.commands = commands;
 const args = (0, _indexJs).default(
@@ -167,7 +167,7 @@ commands[command]()
     }
   });
 if (command === "dev") {
-  const { CONFIG_FILES } = require("../shared/lib/constants");
+  const { CONFIG_FILES } = require("./node_modules/next/dist/shared/lib/constants");
   const { watchFile } = require("fs");
   for (const CONFIG_FILE of CONFIG_FILES) {
     watchFile(`${process.cwd()}/${CONFIG_FILE}`, (cur, prev) => {
