@@ -1,0 +1,5 @@
+#path to nodejs version installed
+PassengerNodejs [PUT IN YOUR PATH TO YOUR INSTALLATION OF NODE JS]
+
+#error reporting
+PassengerFriendlyErrorPages on
