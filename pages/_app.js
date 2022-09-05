@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import Script from "next/script";
+import React from "react";
 
 function MyApp({Component, pageProps}) {
     return (
