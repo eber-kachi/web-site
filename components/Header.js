@@ -50,7 +50,8 @@ export default function Header() {
   return (
     <nav
       className={
-        "flex px-2 w-full content-center fixed " + (navbar ? "bg-slate-50" : "")
+        "flex px-2 w-full content-center fixed z-10 " +
+        (navbar ? "bg-slate-50" : "")
       }
     >
       <div className="container flex  flex-wrap justify-between items-center mx-auto py-2">

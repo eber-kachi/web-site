@@ -343,7 +343,7 @@ export default function Home() {
 
         {/*cloud Hosting */}
         <div className="bg-white grid lg:grid-cols-2 md:grid-cols-1 place-content-center">
-          <div>
+          <div style={{ zIndex: "1" }}>
             <Image src={Server} alt="Flowbite Logo" />
             {/* <img src="assets/server.jpeg" /> */}
           </div>
@@ -588,3 +588,12 @@ export default function Home() {
     </div>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {
+      posts:[]
+    },
+  }
+}
+
