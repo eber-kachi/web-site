@@ -3,7 +3,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-import Banner from "../public/assets/Banner.jpg";
+import Banner from "../public/assets/bannerNew.jpg";
 import Google from "../public/assets/google.svg";
 import Aws from "../public/assets/aws.svg";
 import Firebase from "../public/assets/firebase.svg";
@@ -12,8 +12,9 @@ import Next from "../public/assets/nextjs.svg";
 import Ghost from "../public/assets/ghost.svg";
 import Blog from "../public/assets/blog.png";
 import Development from "../public/assets/development.png";
+import Credencial from "../public/assets/cards.svg"
 import CamaraCctv from "../public/assets/camara-de-cctv.png";
-import Server from "../public/assets/server.jpeg";
+import Server from "../public/assets/server.jpg";
 import Camaradeseg from "../public/assets/camaradeseg.jpeg";
 import Software from "../public/assets/software.jpeg";
 import Socialmedia from "../public/assets/social_media.jpeg";
@@ -42,14 +43,14 @@ export default function Home() {
         <div className="flex flex-col justify-center md:pl-20 mt-10">
           <div className="mt-10">
             <span
-              className="bg-gray-200 text-gray-500 md:text-xs font-semibold  rounded-full py-3 px-5"
+              className="bg-gray-100 text-gray-500 md:text-xs font-semibold  rounded-full py-3 px-5"
               style={{ fontSize: "10px" }}
             >
               Teconologías modernas para tu orgnización
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold py-3">
+          <h1 className="text-4xl md:text-5xl text-sky-800 font-bold py-3">
             Desarrollamos soluciones digitales y servicios de acordes a las
             necesidades actuales
           </h1>
@@ -78,7 +79,9 @@ export default function Home() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 ></path>
               </svg>
-              Conocer más
+              <a href="https://wa.link/n9tl9z" className="">
+                Contactarse
+              </a>
             </button>
           </div>
         </div>
@@ -91,7 +94,7 @@ export default function Home() {
 
       {/*Partners */}
       <div className="grid grid-rows-1 content-center m-10" id="servicios">
-        <h2 className="text-xl text-center text-gray-500 py-5">
+        <h2 className="text-xl text-center text-sky-700 py-5">
           Utilizamos servicios, herramientas y tecnologías más productivas del
           mercado
         </h2>
@@ -216,7 +219,7 @@ export default function Home() {
             uno más personalizado.
           </p>
 
-          <button
+          {/* <button
             type="button"
             className="text-sky-600 bg-white hover:bg-sky-50 hover:text-sky-500 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
           >
@@ -233,7 +236,7 @@ export default function Home() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </button>
+          </button> */}
         </div>
 
         <div className="flex flex-col  items-center text-center">
@@ -259,7 +262,7 @@ export default function Home() {
             organización necesita.
           </p>
 
-          <button
+          {/* <button
             type="button"
             className="text-sky-600 bg-white hover:bg-sky-50 hover:text-sky-500 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
           >
@@ -276,12 +279,12 @@ export default function Home() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </button>
+          </button> */}
         </div>
 
         <div className="flex flex-col  items-center text-center">
           <Image
-            src={CamaraCctv}
+            src={Credencial}
             alt="Flowbite Logo"
             className="w-24 h-24"
             width={width}
@@ -294,22 +297,22 @@ export default function Home() {
             alt="Flowbite Logo"
           /> */}
 
-          <h2 className="text-base font-bold m-2">
-            Instalación de cámaras de seguridad
-          </h2>
+          <h2 className="text-base font-bold m-2">Control de asistencias</h2>
 
           <p className="px-10 text-base text-gray-400 font-light">
-            Proveemos soluciones de seguridad integral adaptadas a las
-            necesidades de la actualidad. Tenemos las mejores herramientas para
-            proteger a las personas y asegurar los activos, implementando la
-            tecnología más moderna.
+            Registra asistencias en tiempo real mediante un sistema web y una
+            aplicación movil basado en gestión de QR. Diseños 100%
+            personalizados y la integración del sistema podrán optimizar el
+            control de asistencias de tu Organización.
           </p>
 
           <button
             type="button"
             className="text-sky-600 bg-white hover:bg-sky-50 hover:text-sky-500 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
           >
-            Ver más
+            <a href="https://credenciales.inittsoft.com/" className="">
+              Ver más
+            </a>
             <svg
               className="w-5 h-5 ml-2 -mr-1"
               fill="currentColor"
@@ -330,11 +333,11 @@ export default function Home() {
       <div className="bg-sky-50">
         <div className="grid place-content-center h-64">
           <div className="flex flex-col justify-center text-center max-w-md">
-            <h2 className="text-5xl font-bold py-5 ">
+            <h2 className="text-5xl text-sky-900 font-bold py-5 ">
               Soluciones digitales modernas
             </h2>
 
-            <p className="whitespace-normal">
+            <p className="whitespace-normal text-sky-700">
               Brindamos servicios que tu organización necesita para optimizar la
               gestión tecnológica, comercial y administrativa.
             </p>
@@ -354,14 +357,14 @@ export default function Home() {
               aplicación Web, tu tienes la idea y nosotros te damos las
               herramientas para que puedas desarrollarla.
             </p>
-            <div>
+            {/* <div>
               <button
                 type="button"
                 className="text-white bg-sky-500 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  inline-flex items-center"
               >
                 Conocer más
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         {/*MKT Digital */}
@@ -375,14 +378,14 @@ export default function Home() {
               marketing digital basado en analítica y queremos ayudarte a
               incrementar el retorno de tu inversión.
             </p>
-            <div>
+            {/* <div>
               <button
                 type="button"
                 className="text-white bg-sky-500 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  inline-flex items-center"
               >
                 Conocer más
               </button>
-            </div>
+            </div> */}
           </div>
           <div>
             <Image src={Socialmedia} alt="Flowbite Logo" />
@@ -404,14 +407,14 @@ export default function Home() {
               aplicaciones móviles y el sistema informatico que tu empresa u
               organización necesita.
             </p>
-            <div>
+            {/* <div>
               <button
                 type="button"
                 className="text-white bg-sky-500 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  inline-flex items-center"
               >
                 Conocer más
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         {/*Instalacion de camaras de seguridad */}
@@ -426,14 +429,14 @@ export default function Home() {
               para proteger a las personas y asegurar los activos, implementando
               la tecnología más moderna.
             </p>
-            <div>
+            {/* <div>
               <button
                 type="button"
                 className="text-white bg-sky-500 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  inline-flex items-center"
               >
                 Conocer más
               </button>
-            </div>
+            </div> */}
           </div>
           <div>
             <Image src={Camaradeseg} alt="Flowbite Logo" />
@@ -446,7 +449,7 @@ export default function Home() {
       <div className="m-10" id="proyectos">
         <div className="grid place-content-center h-64">
           <div className="flex flex-col justify-center text-center max-w-md">
-            <h2 className="text-5xl font-bold py-5">Proyectos innovadores</h2>
+            <h2 className="text-5xl text-sky-800 font-bold py-5">Proyectos innovadores</h2>
             <p className="text-zinc-400 whitespace-normal">
               Brindamos tecnología para el mercado nacional basado en la
               necesidad para organizaciones de grupos multitudinarios
@@ -550,7 +553,7 @@ export default function Home() {
             </div>
           </div>
           <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none px-5">
-            <div className="max-w-sm bg-white rounded-2xl shadow-md gap-10 ">
+            <div className="max-w-sm bg-sky-50 border border-sky-400 rounded-2xl shadow-md gap-10 ">
               <div className="flex flex-col items-center text-center p-5">
                 <Image
                   src={Miotb}
@@ -564,7 +567,7 @@ export default function Home() {
                   src="assets/Miotb.png"
                   alt="Bonnie image"
                 /> */}
-                <h5 className="mb-1 text-xl font-medium text-gray-900 ">
+                <h5 className="text-sky-700 mb-1 text-xl font-semibold ">
                   Sistema de acreditaciones y asistencias
                 </h5>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
@@ -574,9 +577,11 @@ export default function Home() {
                 </span>
                 <button
                   type="button"
-                  className="text-sky-600  hover:bg-sky-50 hover:text-sky-500 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm m-2 text-center inline-flex items-center p-1"
+                  className="text-sky-600 border border-sky-500 hover:bg-sky-100 hover:text-sky-500 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm m-2 text-center inline-flex items-center p-1"
                 >
-                  Conocer
+                  <a href="https://credenciales.inittsoft.com/" className="">
+                    Conocer
+                  </a>
                 </button>
               </div>
             </div>
