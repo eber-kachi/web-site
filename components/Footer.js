@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-800 mx-10">
+    <footer className="bg-gray-900  px-10">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex">
           <div className="w-full -mx-6 lg:w-2/5">
@@ -15,9 +15,9 @@ export default function Footer() {
               </div>
 
               <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">
-                Av. América Este Final esq. Av. Uyuni
+                Av Albina Patiño Km 15. Zona Esmeralda
               </p>
-              <span className="text-gray-200">360 WORKPLACE</span>
+              <span className="text-gray-200">COCHABAMBA</span>
 
               <div className="flex mt-4 -mx-2">
                 <a
@@ -149,7 +149,7 @@ export default function Footer() {
         <hr className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700" />
         <div>
           <p className="text-center text-gray-800 dark:text-white">
-            © InittSoft 2022 - All rights reserved
+            © InittSoft 2022 - Todos los derechos reservados
           </p>
         </div>
       </div>
