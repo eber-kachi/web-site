@@ -12,7 +12,7 @@ import Next from "../public/assets/nextjs.svg";
 import Ghost from "../public/assets/ghost.svg";
 import Blog from "../public/assets/blog.png";
 import Development from "../public/assets/development.png";
-import Credencial from "../public/assets/cards.svg"
+import Credencial from "../public/assets/cards.svg";
 import CamaraCctv from "../public/assets/camara-de-cctv.png";
 import Server from "../public/assets/server.jpg";
 import Camaradeseg from "../public/assets/camaradeseg.jpeg";
@@ -42,10 +42,7 @@ export default function Home() {
       <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 mx-10">
         <div className="flex flex-col justify-center md:pl-20 mt-10">
           <div className="mt-10">
-            <span
-              className="bg-gray-100 text-gray-500 md:text-xs font-semibold  rounded-full py-3 px-5"
-              style={{ fontSize: "10px" }}
-            >
+            <span className="bg-gray-100 text-gray-500 text-[10px] md:text-lg font-semibold  rounded-full py-3 px-5">
               Teconologías modernas para tu orgnización
             </span>
           </div>
@@ -87,7 +84,12 @@ export default function Home() {
         </div>
 
         <div style={{ zIndex: "-5" }}>
-          <Image src={Banner} alt="banner" />
+          <Image
+            src={Banner}
+            alt="banner"
+            layout="responsive"
+            priority={true}
+          />
           {/* <img src="assets/Banner.jpg" /> */}
         </div>
       </div>
@@ -347,7 +349,7 @@ export default function Home() {
         {/*cloud Hosting */}
         <div className="bg-white grid lg:grid-cols-2 md:grid-cols-1 place-content-center">
           <div style={{ zIndex: "1" }}>
-            <Image src={Server} alt="Flowbite Logo" />
+            <Image src={Server} alt="Flowbite Logo" layout="responsive" />
             {/* <img src="assets/server.jpeg" /> */}
           </div>
           <div className="flex flex-col justify-center max-w-md  md:pl-20 p-10 ">
@@ -388,14 +390,14 @@ export default function Home() {
             </div> */}
           </div>
           <div>
-            <Image src={Socialmedia} alt="Flowbite Logo" />
+            <Image src={Socialmedia} alt="Flowbite Logo" layout="responsive" />
             {/* <img src="assets/social_media.jpeg" /> */}
           </div>
         </div>
         {/*Desarrollo de software */}
         <div className="bg-white grid lg:grid-cols-2 md:grid-cols-1 place-content-center">
           <div>
-            <Image src={Software} alt="Flowbite Logo" />
+            <Image src={Software} alt="Flowbite Logo" layout="responsive" />
             {/* <img src="assets/software.jpeg" /> */}
           </div>
           <div className="flex flex-col justify-center max-w-md md:pl-20  p-10">
@@ -439,7 +441,7 @@ export default function Home() {
             </div> */}
           </div>
           <div>
-            <Image src={Camaradeseg} alt="Flowbite Logo" />
+            <Image src={Camaradeseg} alt="Flowbite Logo" layout="responsive" />
             {/* <img src="assets/camaradeseg.jpeg" /> */}
           </div>
         </div>
@@ -449,7 +451,9 @@ export default function Home() {
       <div className="m-10" id="proyectos">
         <div className="grid place-content-center h-64">
           <div className="flex flex-col justify-center text-center max-w-md">
-            <h2 className="text-5xl text-sky-800 font-bold py-5">Proyectos innovadores</h2>
+            <h2 className="text-5xl text-sky-800 font-bold py-5">
+              Proyectos innovadores
+            </h2>
             <p className="text-zinc-400 whitespace-normal">
               Brindamos tecnología para el mercado nacional basado en la
               necesidad para organizaciones de grupos multitudinarios
@@ -597,8 +601,7 @@ export default function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      posts:[]
+      posts: [],
     },
-  }
+  };
 }
-
