@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "/var/www/vhosts/inittsoft.com/httpdocs/",
+        
         "paths": {
             "@/*": ["./*"]
         }
