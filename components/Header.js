@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import LogoWhite from "../public/assets/LogoWhite.svg";
+import LogoWhite from "@/public/assets/LogoWhite.svg";
 import Image from "next/image";
 
 export default function Header() {
