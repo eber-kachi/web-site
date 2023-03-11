@@ -6,6 +6,7 @@ import Image from "next/image";
 // import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import Link from "next/link";
 
 const Testimoni = ({
   listTestimoni = [
@@ -33,6 +34,7 @@ const Testimoni = ({
       city: "Warsaw",
       country: "Poland",
       rating: "4.9",
+      href: "/colegios",
       testimoni:
         "La implementación de este software en Unidades Educativas permitirá enviar notificaciones de asistencia en tiempo real mediante un código unico de credencial de estudiante. También generar boletas de notas de forma generica y autómatica, reduciendo el trabajo en la administración Educativa.",
     },
@@ -97,33 +99,75 @@ const Testimoni = ({
         arrows={false}
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
+        id="testimoni"
       >
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="border-2 border-gray-500 hover:border-black-600 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1 items-center">
-                  <Image
-                    src={listTestimonis.image}
-                    height={70}
-                    width={70}
-                    alt="Icon People"
-                  />
-                  <div className="flex flex-col ml-5 text-left">
-                    <p className="text-xl font-semibold text-black-900 capitalize">
-                      {listTestimonis.name}
-                    </p>
-                    <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    {/* <Stars className="h-4 w-4" /> */}
-                  </span>
-                </div>
+                {listTestimonis?.href ? (
+                  <>
+                    <Link href={listTestimonis?.href}>
+                      <a>
+                        <div className="flex order-2 xl:order-1 items-center">
+                          <Image
+                            src={listTestimonis.image}
+                            height={70}
+                            width={70}
+                            alt="Icon People"
+                          />
+                          <div className="flex flex-col ml-5 text-left">
+                            <p className="text-xl font-semibold text-black-900 capitalize">
+                              {listTestimonis.name}
+                            </p>
+                            <p className="text-sm text-black-500 capitalize">
+                              {listTestimonis.city},{listTestimonis.country}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
+                          <p className="text-sm">{listTestimonis.rating}</p>
+                          <span className="flex ml-4">
+                            <image
+                              className="h-4 w-4"
+                              src="/assets/Icon/stars.svg"
+                            />
+                            {/* <Stars className="h-4 w-4" /> */}
+                          </span>
+                        </div>
+                      </a>
+                    </Link>{" "}
+                  </>
+                ) : (
+                  <>
+                    <div className="flex order-2 xl:order-1 items-center">
+                      <Image
+                        src={listTestimonis.image}
+                        height={70}
+                        width={70}
+                        alt="Icon People"
+                      />
+                      <div className="flex flex-col ml-5 text-left">
+                        <p className="text-xl font-semibold text-black-900 capitalize">
+                          {listTestimonis.name}
+                        </p>
+                        <p className="text-sm text-black-500 capitalize">
+                          {listTestimonis.city},{listTestimonis.country}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
+                      <p className="text-sm">{listTestimonis.rating}</p>
+                      <span className="flex ml-4">
+                        <image
+                          className="h-4 w-4"
+                          src="/assets/Icon/stars.svg"
+                        />
+                        {/* <Stars className="h-4 w-4" /> */}
+                      </span>
+                    </div>
+                  </>
+                )}
               </div>
               <p className="mt-5 text-left text-black-500">
                 “{listTestimonis.testimoni}”.

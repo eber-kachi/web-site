@@ -105,7 +105,11 @@ const Header = () => {
                   Sign In
               </a>
             </Link> */}
-            <ButtonOutline>Contáctanos</ButtonOutline>
+            <ButtonOutline>
+              <a href="https://www.google.com" target="_blank">
+                Contáctanos
+              </a>
+            </ButtonOutline>
           </div>
         </nav>
       </header>
