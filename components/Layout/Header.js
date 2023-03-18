@@ -25,13 +25,13 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Image
-              src="/assets/Logo.png"
-              height={40}
-              width={40}
-              alt="Icon People"
+              src="/public/assets/Logo.png"
+              height={35}
+              width={35}
+              alt="Logo Initt"
             />
             <a href="https://www.inittsoft.com/">
-              <h1 className="px-2 font-semibold text-2xl">InittSoft</h1>
+              <h1 className="px-2 font-semibold text-xl">InittSoft</h1>
             </a>
             {/* <LogoVPN className="h-8 w-auto" /> */}
           </div>
