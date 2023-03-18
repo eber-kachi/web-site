@@ -46,7 +46,7 @@ const Hero = ({
               Trabajaremos de la mano en base a los objetivos de tu Organización
               y asi podrás obtener métricas de evaluación de resultados
             </p>
-            <ButtonOutline className="bg-black-900 text-white-500">Conocer servicios</ButtonOutline>
+            {/* <ButtonOutline className="bg-black-900 text-white-500">Conocer servicios</ButtonOutline> */}
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
