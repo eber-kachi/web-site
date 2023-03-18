@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
+// import LogoVPN from "../../public/assets/Logo.png";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,6 +24,16 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
+            <Image
+              href="https://www.inittsoft.com/"
+              src="/assets/Logo.png"
+              height={40}
+              width={40}
+              alt="Icon People"
+            />
+            <a href="https://www.inittsoft.com/">
+              <h1 className="px-2 font-semibold text-2xl">InittSoft</h1>
+            </a>
             {/* <LogoVPN className="h-8 w-auto" /> */}
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-600  items-center">
@@ -106,7 +117,7 @@ const Header = () => {
               </a>
             </Link> */}
             <ButtonOutline>
-              <a href="https://www.google.com" target="_blank">
+              <a href="https://wa.link/1ksirf" target="_blank">
                 Contáctanos
               </a>
             </ButtonOutline>
